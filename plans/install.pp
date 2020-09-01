@@ -4,7 +4,7 @@
 # @param root_user The root user email address for CD4PE
 # @param root_password The root user password for CD4PE
 # @param console_password The password for the platform admin console
-plan vagrant_bolt_cd4pe_v4::install (
+plan bolt_cd4pe_v4::install (
   TargetSpec $targets,
   String[1] $license,
   Optional[String[1]] $root_user = 'root@puppet.com',
@@ -34,7 +34,7 @@ plan vagrant_bolt_cd4pe_v4::install (
   apply($targets) {
     file{"${install_dir}/config.yaml":
       ensure => file,
-      content => epp('vagrant_bolt_cd4pe_v4/config.yaml.epp', 'root_user' => $root_user, 'root_password' => $root_password, 'target_fqdn' => $target_fqdn),
+      content => epp('bolt_cd4pe_v4/config.yaml.epp', 'root_user' => $root_user, 'root_password' => $root_password, 'target_fqdn' => $target_fqdn),
     }
   }
 

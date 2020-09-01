@@ -1,10 +1,10 @@
-# vagrant_bolt_cd4pe_v4
+# bolt_cd4pe_v4
 
-vagrant_bolt_cd4pe_v4::install - This plan installs the latest version of Replicated and installs it.  It then deploys CD4PE using the license provided
+bolt_cd4pe_v4::install - This plan installs the latest version of Replicated and installs it.  It then deploys CD4PE using the license provided
 
 USAGE:
 ```
-bolt plan run vagrant_bolt_cd4pe_v4::install targets=<value> license=<value> [root_user=<value>] [root_password=<value>] [console_password=<value>]
+bolt plan run bolt_cd4pe_v4::install targets=<value> license=<value> [root_user=<value>] [root_password=<value>] [console_password=<value>]
 ```
 
 PARAMETERS:
@@ -27,7 +27,7 @@ PARAMETERS:
 Examples:
 
 ```
-# bolt plan run vagrant_bolt_cd4pe_v4::install -m modules:.. --user centos --run-as root --targets replicated-cdpe-node1.puppetdebug.vlan license=~/Desktop/mylicense.yaml
+# bolt plan run bolt_cd4pe_v4::install -m modules:.. --user centos --run-as root --targets replicated-cdpe-node1.puppetdebug.vlan license=~/Desktop/mylicense.yaml
 ```
 
 Notes:
