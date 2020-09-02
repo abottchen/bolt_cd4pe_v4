@@ -7,24 +7,10 @@ spec:
     hostname:
       value: <%= $target_fqdn %>
     analytics:
-      value: "false"
-    minio_access_key:
-      value: minio
-    minio_secret_key:
-      value: minio123
-    postgres_password:
-      value: cd4pe123
-    postgres_user:
-      value: cd4pe
+      value: "true"
     root_email:
       value: <%= $root_user %>
     root_password:
       value: <%= $root_password %>
-    annotations:
-      value: "nginx.ingress.kubernetes.io/ssl-redirect: \"false\""
-    backend_port:
-      value: "30800"
-    high_availability:
-      value: "0"
     accept_eula:
       value: has_accepted_eula
