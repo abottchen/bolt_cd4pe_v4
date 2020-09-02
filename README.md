@@ -1,6 +1,6 @@
 # bolt_cd4pe_v4
 
-bolt_cd4pe_v4::install - This plan installs the latest version of Replicated and installs it.  It then deploys CD4PE using the license provided
+bolt_cd4pe_v4::install - This plan downloads the latest version of Replicated and installs it.  It then deploys CD4PE using the license provided
 
 USAGE:
 ```
